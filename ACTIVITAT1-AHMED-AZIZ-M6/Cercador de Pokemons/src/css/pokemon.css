@@ -1,0 +1,142 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Fuente tematica de videojuegos */
+    background: url('1243956.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor de los Pokémon */
+.pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border: 2px solid #ffcb05; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de las imagenes */
+.card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los nombres */
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #3b4cca; /* Color azul de la Poke Ball */
+}
+
+/* Estilo de los botones */
+.card button {
+    background-color: #ff0000; /* Color rojo de la Poke Ball */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.2s;
+}
+
+.card button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo de los botones deshabilitados */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo de los contenedores */
+div {
+    margin: 10px 0;
+}
+
+/* Estilo de los selectores y botones de paginacion */
+select, button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #3b4cca;
+    border-radius: 5px;
+    background-color: #ffcb05;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+select:hover, button:hover {
+    background-color: #ffb300;
+}
+
+/* Estilo del selector de resultados */
+#result-count {
+    font-size: 1em;
+}
+
+/* Estilo del contenedor de detalles del Pokemon */
+.pokemon-details {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo blanco con transparencia */
+    border: 2px solid #ffcb05; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.pokemon-details h1 {
+    font-size: 1.5em;
+    color: #3b4cca; /* Color azul de  Ball */
+}
+
+.pokemon-details img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.pokemon-details p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.pokemon-details button {
+    background-color: #ff0000; /* Color rojo de Ball */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.2s;
+}
+
+.pokemon-details button:hover {
+    background-color: #cc0000;
+}
